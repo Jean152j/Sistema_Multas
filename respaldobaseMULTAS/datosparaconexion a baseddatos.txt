@@ -1,0 +1,12 @@
+Steeven  Lopez
+
+
+acceso: 
+http://www.phpmyadmin.co/
+
+
+Server: sql5.freemysqlhosting.net
+Name: sql5388273
+Username: sql5388273
+Password: GPP2pAB7lZ
+Port number: 3306

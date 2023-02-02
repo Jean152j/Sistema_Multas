@@ -1,0 +1,43 @@
+//INSERTAR DATOS EN LA TABLA agentes
+
+INSERT INTO agentes (cedula, nombre, apellido, contrasena) VALUES('1801','LENIN', 'ACOSTA','1801');
+INSERT INTO agentes (cedula, nombre, apellido, contrasena) VALUES('1802','ANDRES', 'GARCIA','1802');
+INSERT INTO agentes (cedula, nombre, apellido, contrasena) VALUES('1803','JEAN', 'JATIVA','1803');
+INSERT INTO agentes (cedula, nombre, apellido, contrasena) VALUES('1804','STEEVEN', 'LOPEZ','1804');
+
+//INSERTAR DATOS EN LA TABLA conductores 
+INSERT INTO conductores (cedula, nombre, apellido) VALUES('1901','JOSE', 'SANCHEZ');
+INSERT INTO conductores (cedula, nombre, apellido) VALUES('1902','KEVIN', 'PEREZ');
+INSERT INTO conductores (cedula, nombre, apellido) VALUES('1903','ANTONELLA', 'NUÑEZ');
+INSERT INTO conductores (cedula, nombre, apellido) VALUES('1904','OMAR', 'RUIZ');
+ 
+//INSERTAR DATOS EN LA TABLA det_rep_con
+INSERT INTO det_rep_con (id_conductor, id_reporte, id_agente, fecha, pagado) VALUES(1,1,1,'25/05/2020','S');
+INSERT INTO det_rep_con (id_conductor, id_reporte, id_agente, fecha, pagado) VALUES(2,2,2,'30/06/2020','N');
+INSERT INTO det_rep_con (id_conductor, id_reporte, id_agente, fecha, pagado) VALUES(3,3,3,'10/07/2020','S');
+INSERT INTO det_rep_con (id_conductor, id_reporte, id_agente, fecha, pagado) VALUES(4,4,4,'15/08/2020','N');
+
+//INSERTAR DATOS EN LA TABLA det_rep_veh
+INSERT INTO det_rep_veh (id_vehiculo, id_reporte, id_agente, fecha, pagado) VALUES(2,5,1,'02/01/2020','S');
+INSERT INTO det_rep_veh (id_vehiculo, id_reporte, id_agente, fecha, pagado) VALUES(3,6,2,'12/02/2020','N');
+INSERT INTO det_rep_veh (id_vehiculo, id_reporte, id_agente, fecha, pagado) VALUES(4,7,3,'15/03/2020','S');
+INSERT INTO det_rep_veh (id_vehiculo, id_reporte, id_agente, fecha, pagado) VALUES(5,8,4,'20/04/2020','N');
+INSERT INTO det_rep_veh (id_vehiculo, id_reporte, id_agente, fecha, pagado) VALUES(2,6,1,'16/12/2020','N');
+
+//INSERTAR DATOS EN LA TABLA reportes 
+INSERT INTO reportes (tipo, puntos, nombre, multa, prision,destinado) VALUES('PRIMERA CLASE','-10 PUNTOS','QUIEN CONDUZCA UN VEHICULO A MOTOR SIN LICENCIA','$396','3 DIAS DE PRISION','C');
+INSERT INTO reportes (tipo, puntos, nombre, multa, prision,destinado) VALUES('SEGUNDA CLASE','-9 PUNTOS','EL CONDUCTOR QUE CAUSE UN ACCIDENTE','$193','NO HAY DIAS DE PRISION','C');
+INSERT INTO reportes (tipo, puntos, nombre, multa, prision,destinado) VALUES('TERCERA CLASE','-7.5 PUNTOS','EL CONDUCTOR QUE CAUSE DAÑO A LA VIA','$154','NO HAY DIAS DE PRISION','C');
+INSERT INTO reportes (tipo, puntos, nombre, multa, prision,destinado) VALUES('CUARTA CLASE','-6 PUNTOS','EL CONDUCTOR QUE DESOBEDECE AL AGENTE','$115','NO HAY DIAS DE PRISION','C');
+INSERT INTO reportes (tipo, puntos, nombre, multa, prision,destinado) VALUES('QUINTA CLASE','-4.5 PUNTOS','VEHICULO SIN SALVOCONDUCTO','$57','NO HAY DIAS DE PRISION','V');
+INSERT INTO reportes (tipo, puntos, nombre, multa, prision,destinado) VALUES('SEXTA CLASE','-3 PUNTOS','VEHICULO CON LLANTAS DESGASTADAS','$38','NO HAY DIAS DE PRISION','V');
+INSERT INTO reportes (tipo, puntos, nombre, multa, prision,destinado) VALUES('SEPTIMA CLASE','-1.5 PUNTOS','VEHICULO CON PLACA BORROSA','$20','NO HAY DIAS DE PRISION','V');
+INSERT INTO reportes (tipo, puntos, nombre, multa, prision,destinado) VALUES('PRIMERA CLASE','-10 PUNTOS','VEHICULO CON PLACA DUPLICADA','$396','3 DIAS DE PRISION','V');
+
+//INSERTAR DATOS EN LA TABLA vehiculos
+INSERT INTO vehiculos (placa, marca, modelo, anio, color, anio_matricula, id_conductor) VALUES('ABC0139','TOYOTA','HILUX','2010','ROJO','2020',1);
+INSERT INTO vehiculos (placa, marca, modelo, anio, color, anio_matricula, id_conductor) VALUES('HCK0201','HYUNDAI','TUCSON','2015','NEGRO','2020',2);
+INSERT INTO vehiculos (placa, marca, modelo, anio, color, anio_matricula, id_conductor) VALUES('PBK0447','CHEVROLET','SPARK','2014','AZUL','2020',3);
+INSERT INTO vehiculos (placa, marca, modelo, anio, color, anio_matricula, id_conductor) VALUES('TBC0164','KIA','SPORTAGE','2016','PLOMO','2020',4);
+
+//DATOS INGRESADOS CORRECTAMENTE 

@@ -1,0 +1,42 @@
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table td {
+	color: hsl(213, 7%, 27%);
+	border: 1px solid black;
+	padding: 10px 20px;
+	text-transform: uppercase;
+}
+
+table tr:hover {
+	background: #ccc;
+}
+
+table td:hover {
+	background: black;
+	color: white;
+}
+
+.contenedor {
+	color: white;
+	top: 50%;
+	left: 34%;
+	position: absolute;	/* centrar el div*/
+	transform: translate(-50%, -50%);	/* para q no reseca el div*/
+	box-sizing: border-box;
+}
+
+.cont {
+	color: white;
+	top: 55%;
+	left: 82%;
+	position: absolute;	/* centrar el div*/
+	transform: translate(-50%, -50%);	/* para q no reseca el div*/
+	padding: 50px 50px;
+}
+
+.th {
+	font-weight: bold;
+}
